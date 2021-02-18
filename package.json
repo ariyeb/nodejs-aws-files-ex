@@ -15,9 +15,10 @@
     "aws-sdk": "^2.845.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^5.11.16",
+    "mongoose": "^5.11.15",
     "multer": "^1.4.2",
-    "multer-s3": "^2.9.0"
+    "multer-s3": "^2.9.0",
+    "s3-proxy": "^1.2.1"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
