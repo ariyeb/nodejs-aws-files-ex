@@ -22,16 +22,6 @@ const fileStorage = multerS3({
     }
 });
 
-// const fileStorage = multer.diskStorage({
-//     destination: (req, file, callback) => {
-//         callback(null, 'images');
-//     },
-//     filename: (req, file, callback) => {
-//         const fileName = new Date().getTime() + "-" + file.originalname;
-//         callback(null, fileName);
-//     }
-// });
-
 const handleImage = multer({ storage: fileStorage }).single("image");
 
 const getImage = async (req, res, next) => {
